@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Situs Naufal</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap-5.3.3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">XalLStore</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="login.html">Logout</a></li>
+            </ul>
+        </div>
+    </div>  
+</nav>
+
+<!-- Hero Section -->
+<div class="hero-section text-white text-center d-flex align-items-center justify-content-center">
+    <div>
+        <h1 class="display-4">Top-Up Game Terpercaya</h1>
+        <p class="lead">Dapatkan voucher game favorit Anda dengan harga terjangkau dan proses cepat.</p>
+        <div class="mt-4">
+            <a href="#services" class="btn btn-primary btn-lg">Lihat Layanan</a>
+            <a href="#accountInfo" class="btn btn-primary btn-lg">Informasi Akun</a>
+        </div>
+    </div>
+</div>
+
+<section id="services" class="container mt-5">
+    <h2 class="text-center mb-4">Layanan Top-Up</h2>
+    <div class="row">
+        <div class="col-md-4 mb-4">
+            <div class="card shadow-sm">
+                <img src="assets/images/mobilelegends.jpg" class="card-img-top" alt="Mobile Legends">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Mobile Legends</h5>
+                    <p class="card-text">Top-up Diamond cepat dan murah untuk Mobile Legends.</p>
+                    <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#topUpModal" data-game="Mobile Legends">Top-Up Sekarang</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card shadow-sm">
+                <img src="assets/images/pubg.jpg" class="card-img-top" alt="PUBG Mobile">
+                <div class="card-body text-center">
+                    <h5 class="card-title">PUBG Mobile</h5>
+                    <p class="card-text">Top-up UC untuk PUBG Mobile dengan proses instan.</p>
+                    <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#topUpModal" data-game="PUBG Mobile">Top-Up Sekarang</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card shadow-sm">
+                <img src="assets/images/freefire.jpg" class="card-img-top" alt="Free Fire">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Free Fire</h5>
+                    <p class="card-text">Isi Diamonds Free Fire dengan harga termurah.</p>
+                    <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#topUpModal" data-game="Free Fire">Top-Up Sekarang</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card shadow-sm">
+                <img src="assets/images/valorant.jpg" class="card-img-top" alt="Valorant">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Valorant</h5>
+                    <p class="card-text">Isi Riot Points untuk Valorant dengan cepat dan aman.</p>
+                    <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#topUpModal" data-game="Valorant">Top-Up Sekarang</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card shadow-sm">
+                <img src="assets/images/genshin.jpg" class="card-img-top" alt="Genshin Impact">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Genshin Impact</h5>
+                    <p class="card-text">Top-up Primogems untuk Genshin Impact dengan harga terbaik.</p>
+                    <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#topUpModal" data-game="Genshin Impact">Top-Up Sekarang</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card shadow-sm">
+                <img src="assets/images/cod.jpg" class="card-img-top" alt="Call of Duty">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Call of Duty</h5>
+                    <p class="card-text">Isi CP untuk Call of Duty Mobile dengan mudah.</p>
+                    <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#topUpModal" data-game="Call of Duty">Top-Up Sekarang</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Informasi Akun -->
+<section id="accountInfo" class="container mt-5 py-5">
+    <div class="card shadow-sm">
+        <div class="card-header text-center">
+            <h3>Informasi Akun</h3>
+        </div>
+        <div class="card-body">
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item"><strong>Nama: </strong><span id="userNameDisplay">User Name</span></li>
+                <li class="list-group-item"><strong>Email: </strong><span id="userEmail">user@example.com</span></li>
+                <li class="list-group-item"><strong>Tanggal Registrasi: </strong><span id="userRegDate">01-01-2024</span></li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<footer class="footer mt-5 text-center">
+    <p>&copy; 2024 by 22552011077. Naufal Pratista S. TIF RP 22 CNS.</p>
+</footer>
+
+<!-- Modal untuk Top-Up -->
+<div class="modal fade" id="topUpModal" tabindex="-1" aria-labelledby="topUpModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="gameTitle">Top-Up Game</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <label for="topUpAmount">Pilih jumlah top-up yang Anda inginkan (UC):</label>
+                <select id="topUpAmount" class="form-select">
+                    <option value="10">10 UC</option>
+                    <option value="20">20 UC</option>
+                    <option value="50">50 UC</option>
+                    <option value="100">100 UC</option>
+                </select>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                <button type="button" class="btn btn-primary" id="confirmTopUp">Konfirmasi Top-Up</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Bootstrap JS -->
+<script src="bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+<!-- Script JS -->
+<script src="assets/js/script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - Situs Naufal</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap-5.3.3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+        <a class="navbar-brand">XalLStore</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<div class="hero-section">  
+    <div class="container d-flex justify-content-center align-items-start" style="min-height: 100vh; margin-top: 200px;">
+        <div class="card shadow-sm w-100" style="max-width: 400px;">
+            <div class="card-header text-center">
+                <h3>Register</h3>
+            </div>
+            <div class="card-body">
+                <form id="registerForm">
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Nama:</label>
+                        <input type="text" class="form-control" id="name" placeholder="Masukkan nama Anda">
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email:</label>
+                        <input type="email" class="form-control" id="email" placeholder="Masukkan email Anda">
+                    </div>
+                    <div class="mb-3">
+                        <label for="password" class="form-label">Password:</label>
+                        <input type="password" class="form-control" id="password" placeholder="Masukkan password Anda">
+                    </div>                    
+                    <button type="submit" class="btn btn-primary w-100">Daftar</button>
+                </form>            
+            </div>
+            <div class="card-footer text-center">
+                <small>Sudah punya akun? <a href="login.html">Login di sini</a></small>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Toast Notification -->
+<div id="toastNotification" class="toast align-items-center text-white bg-success border-0" role="alert" aria-live="assertive" aria-atomic="true" style="position: fixed; bottom: 20px; right: 20px; z-index: 9999;">
+    <div class="d-flex">
+        <div class="toast-body">
+            <strong id="toastMessage"></strong>
+        </div>
+        <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer class="footer text-center mt-4">
+    <p>&copy; 2024 by 22552011077. Naufal Pratista S. TIF RP 22 CNS.</p>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/script.js"></script>
+
+</body>
+</html>

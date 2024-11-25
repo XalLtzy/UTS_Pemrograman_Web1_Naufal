@@ -1,0 +1,238 @@
+/* Global Styles */
+body {
+    background-color: #ffffff;
+    font-family: 'Arial', sans-serif;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 100%;
+    margin-top: 50px;
+}
+
+/* Navbar */
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+    background-color: #001f3f;
+    padding: 10px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand, .nav-link {
+    color: #ffffff !important;
+    font-weight: bold;
+}
+
+.navbar-brand:hover, .nav-link:hover {
+    color: #29fe03 !important;
+}
+
+/* Section Styles */
+#about,
+#review,
+#contacts,
+#blog {
+    height: 100vh;
+    color: rgb(16, 16, 16);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+}
+
+#about h1,
+#review h1,
+#contacts h1,
+#blog h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+#about p,
+#review p,
+#contacts p,
+#blog p {
+    font-size: 1.25rem;
+    line-height: 1.6;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+/* Hero Section */
+.hero-section {
+    background-image: url('../images/topup.jpg');
+    background-size: cover;
+    background-position: center -5px;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 0 20px;
+}
+
+.hero-section h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.hero-section p {
+    font-size: 1.2rem;
+    margin-bottom: 80px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.hero-section .btn {
+    margin: 5px;
+    border-radius: 25px;
+    padding: 10px 30px;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+}
+
+.hero-section .btn-primary {
+    background-color: #001f3f;
+    color: white;
+    border: none;
+}
+
+.hero-section .btn-primary:hover {
+    background-color: #29fe03;
+    color: #001f3f;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Form Styles */
+form .form-label {
+    text-align: left;
+    display: block;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+form .form-control {
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+form .form-control:focus {
+    border-color: #29fe03;
+    box-shadow: 0 0 5px rgba(41, 254, 3, 0.5);
+}
+
+form .form-group {
+    margin-bottom: 20px;
+}
+
+/* Card Styles */
+.card {
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-header, .btn-primary {
+    background-color: #001f3f;
+    color: white;
+    font-weight: bold;
+    border-radius: 50px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-primary:hover {
+    background-color: #29fe03;
+    color: #001f3f;
+    transform: translateY(-2px);
+}
+
+.card img {
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Footer */
+.footer {
+    background-color: #001f3f;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    border-radius: 5px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.footer p {
+    font-size: 0.9em;
+}
+
+/* Table Styles */
+.table thead {
+    background-color: #001f3f;
+    color: white;
+}
+
+.table th, .table td {
+    padding: 12px 15px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+.table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.table tr:hover {
+    background-color: #29fe03;
+    color: white;
+}
+
+/* Toast Animation */
+.toast {
+    opacity: 0;
+    animation: toast-in 0.5s forwards;
+}
+
+@keyframes toast-in {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Services Section */
+#services {
+    background-color: #001f3f;
+    color: white;
+    padding: 60px 0;
+}
+
+/* Account Info */
+#accountInfo {
+    padding: 60px 0;
+    background-color: #ffffff;
+    min-height: 50vh;
+}
+
+/* Modal Styles */
+.modal-dialog {
+    margin-top: 50px;
+}
